@@ -1,0 +1,14 @@
+<Router>s have history (hashHistory) to allow navigation back and forth
+
+<Routers>s have <Route>s
+  Each <Route> has a path and a component to be rendered when the URL matches that path
+    paths on <Route>s can have params (:likeThis)
+      these params are accessible to the component being rendered via props.params
+        props.params is an object that looks { likeThis: (value of 'likeThis' in the URL) }
+
+Put the router into ReactDOM's render method
+  add props.children to be rendered
+  use React.cloneElement to pass props to props.children
+
+To navigate the application, use <Link>
+  <Link>s go 'to' a path (just like <a>s go to 'href')
