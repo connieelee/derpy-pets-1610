@@ -1,4 +1,5 @@
 import React from 'react';
+
 import AnimalCard from './AnimalCard';
 
 export default function AnimalsList({ params, cats, dogs }) {
@@ -9,7 +10,11 @@ export default function AnimalsList({ params, cats, dogs }) {
     <div className="row">
       <h4>{filter}</h4>
       <div>
-        { animals.map(animal => <AnimalCard key={animal.id} animal={animal} />) }
+        {
+          animals.map(animal =>
+            <AnimalCard key={animal.id} animal={animal} />
+          )
+        }
       </div>
     </div>
   );
