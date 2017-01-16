@@ -1,0 +1,1 @@
+export const SELECT_ANIMAL = 'SELECT_ANIMAL';

@@ -1,10 +1,7 @@
 import React from 'react';
 
-export default function AnimalProfile(props) {
-  const { filter, id } = props.params
-  const findAnimalById = animal => animal.id === +id;
-  const animal = props[filter].find(findAnimalById);
-  const { imageUrl, name, gender, description, species } = animal;
+export default function AnimalProfile({ selectedAnimal }) {
+  const { imageUrl, name, gender, description, species } = selectedAnimal;
 
   return (
     <div className="row">

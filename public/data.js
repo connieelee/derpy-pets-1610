@@ -1,4 +1,4 @@
-export const catsData = [
+const catsData = [
   { id: 1, species: 'cat', name: 'Nyan Cat', gender: 'M', description: 'Grey', imageUrl: 'https://upload.wikimedia.org/wikipedia/en/e/ed/Nyan_cat_250px_frame.PNG' },
   { id: 2, species: 'cat', name: 'Pusheen', gender: 'M', description: 'Grey Tabby', imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/9a/4e/8f/9a4e8f69ccae8f637028eac6f835fc79.jpg' },
   { id: 3, species: 'cat', name: 'Tom', gender: 'M', description: 'Grey', imageUrl: 'http://freehdwallpapersz.com/wp-content/uploads/2016/07/tom-and-jerry-wallpapers-250x250.jpg' },
@@ -9,7 +9,7 @@ export const catsData = [
   { id: 8, species: 'cat', name: 'Cat Bus', gender: 'M', description: 'Orange Tabby', imageUrl: 'https://cdn.qwertee.com/images/designs/thumbs/40611.jpg' },
 ];
 
-export const dogsData = [
+const dogsData = [
   { id: 9, species: 'dog', name: 'Scooby Doo', gender: 'M', description: 'Spotted Orange', imageUrl: 'http://www.cartoonpics.net/data/media/25/scooby_doo_bye.jpg' },
   { id: 10, species: 'dog',  name: 'Pluto', gender: 'M', description: 'Orange', imageUrl: 'http://img.lum.dolimg.com/v1/images/open-uri20150422-20810-2unaal_3530efaa.jpeg?region=0,0,600,600&width=320' },
   { id: 11, species: 'dog',  name: 'Goofy', gender: 'M', description: 'Black', imageUrl: 'http://www.mousegifts.com/img/sections/250/49.jpg' },
@@ -19,3 +19,8 @@ export const dogsData = [
   { id: 16, species: 'dog',  name: 'Heen', gender: 'M', description: 'White and Brown', imageUrl: 'http://www.myfconline.com/character_avatars/83932_70821.jpg' },
   { id: 15, species: 'dog',  name: 'Doug', gender: 'M', description: 'Golden Retriever', imageUrl: 'http://c0419384.cdn2.cloudfiles.rackspacecloud.com/swftprve-28279_l-Up%20dog-main.jpg' },
 ];
+
+module.exports = {
+  cats: catsData,
+  dogs: dogsData
+};
